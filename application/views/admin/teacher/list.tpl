@@ -38,7 +38,7 @@
 					<td>
 						<a href="{base_url url='admin/teacher' src=$teacher->id}" class="btn btn-success btn-xs">Detail</a>
 						<a href="{base_url url='admin/teacher/edit' src=$teacher->id}" class="btn btn-primary btn-xs">Edit</a>
-						<a href="{base_url url='admin/teacher/delete' src=$teacher->id}" class="btn btn-danger btn-xs">Hapus</a>
+						<a href="{base_url url='admin/teacher/delete' src=$teacher->id}" class="btn btn-danger btn-xs" onclick="return confirm('Are you sure?')">Hapus</a>
 					</td>
 				</tr>
 			{/foreach}

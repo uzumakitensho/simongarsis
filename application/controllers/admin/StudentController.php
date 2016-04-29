@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class UserController extends CI_Controller {
+class StudentController extends CI_Controller {
 
 	public function __construct()
 	{
@@ -13,21 +13,10 @@ class UserController extends CI_Controller {
 		if($this->session->logged_as != 'administrator'){
 			redirect(base_url('admin/login'));
 		}else{
-		
-			// $result_per_page = 5;
-			// $config['base_url'] = base_url().'admin/user';
-			// $config['total_rows'] = $this->User->count_entries();
-			// $config['per_page'] = $result_per_page;
-			// $this->pagination->initialize($config);
-			// $pagination = $this->pagination->create_links();
+			$students = $this->Student->get_entries();
 			
-			$users = $this->User->get_entries();
-			
-			//var_dump($datatable);die;
-			
-			// $this->smartyci->assign('pagination', $pagination);
-			$this->smartyci->assign('users', $users);
-			$this->smartyci->display( 'admin\user\list.tpl' );
+			$this->smartyci->assign('students', $students);
+			$this->smartyci->display( 'admin\student\list.tpl' );
 		}
 	}
 
@@ -42,12 +31,37 @@ class UserController extends CI_Controller {
 				array(
 					'field' => 'full_name',
 					'label' => 'Full Name',
+					'rules' => 'trim|required|min_length[5]'
+				),
+				array(
+					'field' => 'born_date',
+					'label' => 'Born Date',
+					'rules' => 'trim|required'
+				),
+				array(
+					'field' => 'born_place',
+					'label' => 'Born Place',
+					'rules' => 'trim|required'
+				),
+				array(
+					'field' => 'gender',
+					'label' => 'Gender',
+					'rules' => 'trim|required'
+				),
+				array(
+					'field' => 'nis',
+					'label' => 'NIS',
+					'rules' => 'trim|required'
+				),
+				array(
+					'field' => 'generation',
+					'label' => 'Generation',
 					'rules' => 'trim|required'
 				),
 				array(
 					'field' => 'username',
 					'label' => 'Username',
-					'rules' => 'trim|required|min_length[5]|max_length[12]|is_unique[users.username]',
+					'rules' => 'trim|required|min_length[5]|max_length[12]|is_unique[students.username]',
 					'errors' => array(
 						'required' => 'You have not provided %s.',
 						'is_unique' => 'This %s already exists.'
@@ -70,20 +84,28 @@ class UserController extends CI_Controller {
 					'field' => 'confirm_password',
 					'label' => 'Password Confirmation',
 					'rules' => 'trim|required|matches[password]'
+				),
+				array(
+					'field' => 'role',
+					'label' => 'Role',
+					'rules' => 'trim|required'
 				)
 			);
-
+			$roles = $this->Student->get_roles();
+			//var_dump($roles);die;
 			$this->form_validation->set_rules($config);
 
 			if ($this->form_validation->run() == FALSE){
-				$this->smartyci->display( 'admin\user\create.tpl' );
+				$this->smartyci->assign('roles', $roles);
+				$this->smartyci->display( 'admin\student\create.tpl' );
 			}else{
-				if($this->User->insert_entry()){
+				if($this->Student->insert_entry()){
 					$this->session->set_flashdata('success', 'Data added successfuly.');
-					redirect(base_url('admin/user/create'));
+					redirect(base_url('admin/student/create'));
 				}else{
+					$this->smartyci->assign('roles', $roles);
 					$this->smartyci->assign('failed', 'Failed add data.');
-					$this->smartyci->display( 'admin\user\create.tpl' );
+					$this->smartyci->display( 'admin\student\create.tpl' );
 				}
 			}
 		}
@@ -100,30 +122,61 @@ class UserController extends CI_Controller {
 				array(
 					'field' => 'full_name',
 					'label' => 'Full Name',
+					'rules' => 'trim|required|min_length[5]'
+				),
+				array(
+					'field' => 'born_date',
+					'label' => 'Born Date',
+					'rules' => 'trim|required'
+				),
+				array(
+					'field' => 'born_place',
+					'label' => 'Born Place',
+					'rules' => 'trim|required'
+				),
+				array(
+					'field' => 'gender',
+					'label' => 'Gender',
+					'rules' => 'trim|required'
+				),
+				array(
+					'field' => 'nis',
+					'label' => 'NIS',
+					'rules' => 'trim|required'
+				),
+				array(
+					'field' => 'generation',
+					'label' => 'Generation',
 					'rules' => 'trim|required'
 				),
 				array(
 					'field' => 'email',
 					'label' => 'Email',
 					'rules' => 'trim|required|valid_email'
+				),
+				array(
+					'field' => 'role',
+					'label' => 'Role',
+					'rules' => 'trim|required'
 				)
 			);
-
+			$roles = $this->Student->get_roles();
 			$this->form_validation->set_rules($config);
 
 			if ($this->form_validation->run() == FALSE){
-				$user = $this->User->get_entry($id);
+				$student = $this->Student->get_entry($id);
 			
-				//var_dump($user);die;
-				$this->smartyci->assign('user', $user);
-				$this->smartyci->display( 'admin\user\edit.tpl' );
+				//var_dump($student);die;
+				$this->smartyci->assign('student', $student);
+				$this->smartyci->assign('roles', $roles);
+				$this->smartyci->display( 'admin\student\edit.tpl' );
 			}else{
-				if($this->User->update_entry()){
+				if($this->Student->update_entry()){
 					$this->session->set_flashdata('success', 'Data updated successfuly.');
-					redirect(base_url('admin/user/'.$id));
+					redirect(base_url('admin/student/'.$id));
 				}else{
 					$this->session->set_flashdata('failed', 'Data not success updated.');
-					redirect(base_url('admin/user/edit/'.$id));
+					redirect(base_url('admin/student/edit/'.$id));
 				}
 			}
 		}
@@ -134,11 +187,11 @@ class UserController extends CI_Controller {
 		if($this->session->logged_as != 'administrator'){
 			redirect(base_url('admin/login'));
 		}else{
-			$user = $this->User->get_entry($id);
+			$student = $this->Student->get_entry($id);
 			
-			//var_dump($user);die;
-			$this->smartyci->assign('user', $user);
-			$this->smartyci->display( 'admin\user\detail.tpl' );
+			//var_dump($student);die;
+			$this->smartyci->assign('student', $student);
+			$this->smartyci->display( 'admin\student\detail.tpl' );
 		}
 	}
 
@@ -147,12 +200,12 @@ class UserController extends CI_Controller {
 		if($this->session->logged_as != 'administrator'){
 			redirect(base_url('admin/login'));
 		}else{
-			if($this->User->delete_entry($id)){
+			if($this->Student->delete_entry($id)){
 				$this->session->set_flashdata('success', 'Data deleted successfuly.');
-				redirect(base_url('admin/user'));
+				redirect(base_url('admin/student'));
 			}else{
 				$this->session->set_flashdata('failed', 'Data not success deleted.');
-				redirect(base_url('admin/user'));
+				redirect(base_url('admin/student'));
 			}
 		}
 	}

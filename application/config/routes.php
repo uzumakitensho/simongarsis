@@ -85,3 +85,12 @@ $route['admin/teacher/(:num)'] = 'admin/TeacherController/detail/$1';
 $route['admin/teacher/create'] = 'admin/TeacherController/create';
 $route['admin/teacher/edit/(:num)'] = 'admin/TeacherController/edit/$1';
 $route['admin/teacher/delete/(:num)'] = 'admin/TeacherController/delete/$1';
+
+/*
+| Students routes			|
+*/
+$route['admin/student'] = 'admin/StudentController';
+$route['admin/student/(:num)'] = 'admin/StudentController/detail/$1';
+$route['admin/student/create'] = 'admin/StudentController/create';
+$route['admin/student/edit/(:num)'] = 'admin/StudentController/edit/$1';
+$route['admin/student/delete/(:num)'] = 'admin/StudentController/delete/$1';

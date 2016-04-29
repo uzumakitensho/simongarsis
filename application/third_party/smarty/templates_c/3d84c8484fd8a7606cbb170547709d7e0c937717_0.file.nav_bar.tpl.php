@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-29 14:58:42
+/* Smarty version 3.1.28, created on 2016-04-29 17:30:17
   from "C:\xampp\htdocs\monitoring\application\views\admin\nav_bar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_57235a828d4434_15031926',
+  'unifunc' => 'content_57237e09704796_36608961',
   'file_dependency' => 
   array (
     '3d84c8484fd8a7606cbb170547709d7e0c937717' => 
     array (
       0 => 'C:\\xampp\\htdocs\\monitoring\\application\\views\\admin\\nav_bar.tpl',
-      1 => 1461934717,
+      1 => 1461943812,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57235a828d4434_15031926 ($_smarty_tpl) {
+function content_57237e09704796_36608961 ($_smarty_tpl) {
 if (!is_callable('smarty_function_base_url')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.base_url.php';
 if (!is_callable('smarty_function_get_session')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.get_session.php';
 ?>
@@ -46,17 +46,18 @@ if (!is_callable('smarty_function_get_session')) require_once 'C:\\xampp\\htdocs
 						<li><a href="<?php echo smarty_function_base_url(array('url'=>'admin/user'),$_smarty_tpl);?>
 ">Administrator</a></li>
 						<li><a href="<?php echo smarty_function_base_url(array('url'=>'admin/teacher'),$_smarty_tpl);?>
-">Guru</a></li>
-						<li><a href="#">Siswa</a></li>
-						<li><a href="#">Orangtua</a></li>
+">Teacher</a></li>
+						<li><a href="<?php echo smarty_function_base_url(array('url'=>'admin/student'),$_smarty_tpl);?>
+">Student</a></li>
+						<li><a href="#">Parents</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Master<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Pelanggaran</a></li>
-						<li><a href="#">Mata Pelajaran</a></li>
-						<li><a href="#">Kelas</a></li>
+						<li><a href="#">Faults</a></li>
+						<li><a href="#">Courses</a></li>
+						<li><a href="#">Classes</a></li>
 						<li><a href="#">User Roles</a></li>
 					</ul>
 				</li>

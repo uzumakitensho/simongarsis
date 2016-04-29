@@ -18,17 +18,17 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="{base_url url='admin/user'}">Administrator</a></li>
-						<li><a href="{base_url url='admin/teacher'}">Guru</a></li>
-						<li><a href="#">Siswa</a></li>
-						<li><a href="#">Orangtua</a></li>
+						<li><a href="{base_url url='admin/teacher'}">Teacher</a></li>
+						<li><a href="{base_url url='admin/student'}">Student</a></li>
+						<li><a href="#">Parents</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Master<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Pelanggaran</a></li>
-						<li><a href="#">Mata Pelajaran</a></li>
-						<li><a href="#">Kelas</a></li>
+						<li><a href="#">Faults</a></li>
+						<li><a href="#">Courses</a></li>
+						<li><a href="#">Classes</a></li>
 						<li><a href="#">User Roles</a></li>
 					</ul>
 				</li>

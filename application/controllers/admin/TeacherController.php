@@ -10,7 +10,7 @@ class TeacherController extends CI_Controller {
 	
 	public function index()
 	{
-		if($this->session->logged_in == false){
+		if($this->session->logged_as != 'administrator'){
 			redirect(base_url('admin/login'));
 		}else{
 			$teachers = $this->Teacher->get_entries();
@@ -23,7 +23,7 @@ class TeacherController extends CI_Controller {
 	public function create()
 	{
 		//var_dump($_SESSION);die;
-		if($this->session->logged_in == false){
+		if($this->session->logged_as != 'administrator'){
 			redirect(base_url('admin/login'));
 		}else{
 			$this->load->library('form_validation');
@@ -104,7 +104,7 @@ class TeacherController extends CI_Controller {
 	public function edit($id)
 	{
 		//var_dump($_SESSION);die;
-		if($this->session->logged_in == false){
+		if($this->session->logged_as != 'administrator'){
 			redirect(base_url('admin/login'));
 		}else{
 			$this->load->library('form_validation');
@@ -144,7 +144,7 @@ class TeacherController extends CI_Controller {
 
 	public function detail($id)
 	{
-		if($this->session->logged_in == false){
+		if($this->session->logged_as != 'administrator'){
 			redirect(base_url('admin/login'));
 		}else{
 			$teacher = $this->Teacher->get_entry($id);
@@ -157,7 +157,7 @@ class TeacherController extends CI_Controller {
 
 	public function delete($id)
 	{
-		if($this->session->logged_in == false){
+		if($this->session->logged_as != 'administrator'){
 			redirect(base_url('admin/login'));
 		}else{
 			if($this->Teacher->delete_entry($id)){

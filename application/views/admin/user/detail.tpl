@@ -44,7 +44,7 @@
 					<td>Actions</td>
 					<td>
 						<a href="{base_url url='admin/user/edit' src=$user->id}" class="btn btn-primary btn-xs">Edit</a>
-						<a href="{base_url url='admin/user/delete' src=$user->id}" class="btn btn-danger btn-xs">Hapus</a>
+						<a href="{base_url url='admin/user/delete' src=$user->id}" class="btn btn-danger btn-xs" onclick="return confirm('Are you sure?')">Hapus</a>
 					</td>
 				</tr>
 			</tbody>
