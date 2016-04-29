@@ -30,7 +30,7 @@
 				</tr>
 				<tr>
 					<td>Born Palce and Date</td>
-					<td>{$teacher->born_place}, {$teacher->born_date}</td>
+					<td>{$teacher->born_place}, {$teacher->born_date|date_format:"%e %B %Y"}</td>
 				</tr>
 				<tr>
 					<td>Gender</td>

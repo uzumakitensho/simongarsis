@@ -8,7 +8,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{base_url url='admin'}">SMPS</a>
+			<a class="navbar-brand" href="{base_url url='admin'}">SIMONGARSIS</a>
 		</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->

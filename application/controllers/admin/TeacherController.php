@@ -120,7 +120,7 @@ class TeacherController extends CI_Controller {
 					'rules' => 'trim|required'
 				)
 			);
-
+			$roles = $this->Teacher->get_roles();
 			$this->form_validation->set_rules($config);
 
 			if ($this->form_validation->run() == FALSE){
@@ -128,6 +128,7 @@ class TeacherController extends CI_Controller {
 			
 				//var_dump($teacher);die;
 				$this->smartyci->assign('teacher', $teacher);
+				$this->smartyci->assign('roles', $roles);
 				$this->smartyci->display( 'admin\teacher\edit.tpl' );
 			}else{
 				if($this->Teacher->update_entry()){

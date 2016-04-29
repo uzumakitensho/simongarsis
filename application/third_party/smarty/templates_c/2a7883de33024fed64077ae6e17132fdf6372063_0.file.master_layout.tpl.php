@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-26 17:39:27
+/* Smarty version 3.1.28, created on 2016-04-29 14:56:19
   from "C:\xampp\htdocs\monitoring\application\views\admin\master_layout.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_571f8bafe044c9_70664894',
+  'unifunc' => 'content_572359f3539a22_93399259',
   'file_dependency' => 
   array (
     '2a7883de33024fed64077ae6e17132fdf6372063' => 
     array (
       0 => 'C:\\xampp\\htdocs\\monitoring\\application\\views\\admin\\master_layout.tpl',
-      1 => 1461685164,
+      1 => 1461934315,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_571f8bafe044c9_70664894 ($_smarty_tpl) {
+function content_572359f3539a22_93399259 ($_smarty_tpl) {
 if (!is_callable('smarty_function_base_url')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.base_url.php';
 if (!is_callable('smarty_function_get_session')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.get_session.php';
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
@@ -31,7 +31,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>SMPS | Sistem Monitoring Pelanggaran Siswa</title>
+    <title>SIMONGARSIS | Sistem Monitoring Pelanggaran Siswa</title>
 
     <!-- Bootstrap -->
     <link href="<?php echo smarty_function_base_url(array('url'=>'assets/css','src'=>'bootstrap.min.css'),$_smarty_tpl);?>
@@ -40,7 +40,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
   <body>
 		<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'navbar', array (
-  0 => 'block_26019571f8bafdd1835_90928449',
+  0 => 'block_29931572359f349d605_50815000',
   1 => false,
   3 => 0,
   2 => 0,
@@ -50,7 +50,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'navbar', array (
 		
 		<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'breadcrumb', array (
-  0 => 'block_8352571f8bafdd9530_44063818',
+  0 => 'block_4680572359f34a1487_44970843',
   1 => false,
   3 => 0,
   2 => 0,
@@ -62,7 +62,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'breadcrumb', arr
 			<div class="row">
 				<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'sidebar', array (
-  0 => 'block_21593571f8bafddd3b4_69985240',
+  0 => 'block_26849572359f34a5300_23162067',
   1 => false,
   3 => 0,
   2 => 0,
@@ -72,7 +72,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'sidebar', array 
 				
 				<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'content', array (
-  0 => 'block_14366571f8bafde1237_98476185',
+  0 => 'block_26118572359f34a9180_72397306',
   1 => false,
   3 => 0,
   2 => 0,
@@ -84,7 +84,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'content', array 
 		
 		<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'footer', array (
-  0 => 'block_14591571f8bafde50b6_28037280',
+  0 => 'block_29895572359f34ad003_52294479',
   1 => false,
   3 => 0,
   2 => 0,
@@ -94,7 +94,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'footer', array (
 		
 		<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'modal', array (
-  0 => 'block_9932571f8bafdf4ac8_54797227',
+  0 => 'block_2804572359f35261a5_67875029',
   1 => false,
   3 => 0,
   2 => 0,
@@ -120,7 +120,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'modal', array (
 
     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'js', array (
-  0 => 'block_23829571f8bafe00647_71962906',
+  0 => 'block_12829572359f3531d29_28624500',
   1 => false,
   3 => 0,
   2 => 0,
@@ -130,26 +130,26 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'js', array (
   </body>
 </html><?php }
 /* {block 'navbar'}  file:admin/master_layout.tpl */
-function block_26019571f8bafdd1835_90928449($_smarty_tpl, $_blockParentStack) {
+function block_29931572359f349d605_50815000($_smarty_tpl, $_blockParentStack) {
 ?>
 
 		<?php
 }
 /* {/block 'navbar'} */
 /* {block 'breadcrumb'}  file:admin/master_layout.tpl */
-function block_8352571f8bafdd9530_44063818($_smarty_tpl, $_blockParentStack) {
+function block_4680572359f34a1487_44970843($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'breadcrumb'} */
 /* {block 'sidebar'}  file:admin/master_layout.tpl */
-function block_21593571f8bafddd3b4_69985240($_smarty_tpl, $_blockParentStack) {
+function block_26849572359f34a5300_23162067($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'sidebar'} */
 /* {block 'content'}  file:admin/master_layout.tpl */
-function block_14366571f8bafde1237_98476185($_smarty_tpl, $_blockParentStack) {
+function block_26118572359f34a9180_72397306($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'content'} */
 /* {block 'footer'}  file:admin/master_layout.tpl */
-function block_14591571f8bafde50b6_28037280($_smarty_tpl, $_blockParentStack) {
+function block_29895572359f34ad003_52294479($_smarty_tpl, $_blockParentStack) {
 ?>
 
 		<footer class="navbar navbar-default" style="margin-top:20px; margin-bottom:0px; border-radius: 0px;">
@@ -163,11 +163,11 @@ function block_14591571f8bafde50b6_28037280($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'footer'} */
 /* {block 'modal'}  file:admin/master_layout.tpl */
-function block_9932571f8bafdf4ac8_54797227($_smarty_tpl, $_blockParentStack) {
+function block_2804572359f35261a5_67875029($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'modal'} */
 /* {block 'js'}  file:admin/master_layout.tpl */
-function block_23829571f8bafe00647_71962906($_smarty_tpl, $_blockParentStack) {
+function block_12829572359f3531d29_28624500($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'js'} */
 }
