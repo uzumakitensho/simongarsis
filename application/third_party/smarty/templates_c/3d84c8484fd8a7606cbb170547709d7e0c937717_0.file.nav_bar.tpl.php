@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-29 17:30:17
+/* Smarty version 3.1.28, created on 2016-04-29 19:20:00
   from "C:\xampp\htdocs\monitoring\application\views\admin\nav_bar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_57237e09704796_36608961',
+  'unifunc' => 'content_572397c056c591_08763819',
   'file_dependency' => 
   array (
     '3d84c8484fd8a7606cbb170547709d7e0c937717' => 
     array (
       0 => 'C:\\xampp\\htdocs\\monitoring\\application\\views\\admin\\nav_bar.tpl',
-      1 => 1461943812,
+      1 => 1461950184,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57237e09704796_36608961 ($_smarty_tpl) {
+function content_572397c056c591_08763819 ($_smarty_tpl) {
 if (!is_callable('smarty_function_base_url')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.base_url.php';
 if (!is_callable('smarty_function_get_session')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.get_session.php';
 ?>
@@ -49,7 +49,8 @@ if (!is_callable('smarty_function_get_session')) require_once 'C:\\xampp\\htdocs
 ">Teacher</a></li>
 						<li><a href="<?php echo smarty_function_base_url(array('url'=>'admin/student'),$_smarty_tpl);?>
 ">Student</a></li>
-						<li><a href="#">Parents</a></li>
+						<li><a href="<?php echo smarty_function_base_url(array('url'=>'admin/parent'),$_smarty_tpl);?>
+">Parents</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">

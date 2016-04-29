@@ -20,7 +20,7 @@
 						<li><a href="{base_url url='admin/user'}">Administrator</a></li>
 						<li><a href="{base_url url='admin/teacher'}">Teacher</a></li>
 						<li><a href="{base_url url='admin/student'}">Student</a></li>
-						<li><a href="#">Parents</a></li>
+						<li><a href="{base_url url='admin/parent'}">Parents</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">

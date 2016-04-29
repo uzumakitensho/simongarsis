@@ -87,10 +87,19 @@ $route['admin/teacher/edit/(:num)'] = 'admin/TeacherController/edit/$1';
 $route['admin/teacher/delete/(:num)'] = 'admin/TeacherController/delete/$1';
 
 /*
-| Students routes			|
+| Student routes			|
 */
 $route['admin/student'] = 'admin/StudentController';
 $route['admin/student/(:num)'] = 'admin/StudentController/detail/$1';
 $route['admin/student/create'] = 'admin/StudentController/create';
 $route['admin/student/edit/(:num)'] = 'admin/StudentController/edit/$1';
 $route['admin/student/delete/(:num)'] = 'admin/StudentController/delete/$1';
+
+/*
+| Parent routes			|
+*/
+$route['admin/parent'] = 'admin/ParentController';
+$route['admin/parent/(:num)'] = 'admin/ParentController/detail/$1';
+$route['admin/parent/create'] = 'admin/ParentController/create';
+$route['admin/parent/edit/(:num)'] = 'admin/ParentController/edit/$1';
+$route['admin/parent/delete/(:num)'] = 'admin/ParentController/delete/$1';
