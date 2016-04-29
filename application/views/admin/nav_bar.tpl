@@ -35,7 +35,7 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{get_session name='full_name'}<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Profile</a></li>
+						<li><a href="#">Profil</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="{base_url url='admin/logout'}">Logout</a></li>
 					</ul>
