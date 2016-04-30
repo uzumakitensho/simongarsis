@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-30 12:50:33
+/* Smarty version 3.1.28, created on 2016-04-30 13:53:15
   from "C:\xampp\htdocs\monitoring\application\views\admin\course\list.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_57248df9f37277_97017467',
+  'unifunc' => 'content_57249cab2f3622_98851884',
   'file_dependency' => 
   array (
     '924d5a6f166d2e97d315d0d8360fa33a92641ebf' => 
     array (
       0 => 'C:\\xampp\\htdocs\\monitoring\\application\\views\\admin\\course\\list.tpl',
-      1 => 1462013430,
+      1 => 1462017192,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:admin/top_notif.tpl' => 1,
   ),
 ),false)) {
-function content_57248df9f37277_97017467 ($_smarty_tpl) {
+function content_57249cab2f3622_98851884 ($_smarty_tpl) {
 if (!is_callable('smarty_function_base_url')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.base_url.php';
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
@@ -32,7 +32,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'navbar', array (
-  0 => 'block_1361457248df9ed9661_03683824',
+  0 => 'block_1303557249cab2283f0_53532843',
   1 => false,
   3 => 0,
   2 => 0,
@@ -42,7 +42,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'navbar', array (
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'breadcrumb', array (
-  0 => 'block_2273557248df9ee1362_45087423',
+  0 => 'block_3079257249cab237df7_88929651',
   1 => false,
   3 => 0,
   2 => 0,
@@ -52,7 +52,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'breadcrumb', arr
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'sidebar', array (
-  0 => 'block_470057248df9ee51e0_26154101',
+  0 => 'block_2224157249cab2477f7_44953693',
   1 => false,
   3 => 0,
   2 => 0,
@@ -62,7 +62,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'sidebar', array 
 				
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'content', array (
-  0 => 'block_240557248df9eecee7_55869832',
+  0 => 'block_1536657249cab2571f4_58612875',
   1 => false,
   3 => 0,
   2 => 0,
@@ -73,7 +73,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'content', array 
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/master_layout.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'navbar'}  file:admin\course\list.tpl */
-function block_1361457248df9ed9661_03683824($_smarty_tpl, $_blockParentStack) {
+function block_1303557249cab2283f0_53532843($_smarty_tpl, $_blockParentStack) {
 ?>
 
 	<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/nav_bar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('active'=>'courses'), 0, false);
@@ -83,7 +83,7 @@ function block_1361457248df9ed9661_03683824($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'navbar'} */
 /* {block 'breadcrumb'}  file:admin\course\list.tpl */
-function block_2273557248df9ee1362_45087423($_smarty_tpl, $_blockParentStack) {
+function block_3079257249cab237df7_88929651($_smarty_tpl, $_blockParentStack) {
 ?>
 
 	<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/course/breadcum.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('active'=>'home'), 0, false);
@@ -93,7 +93,7 @@ function block_2273557248df9ee1362_45087423($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'breadcrumb'} */
 /* {block 'sidebar'}  file:admin\course\list.tpl */
-function block_470057248df9ee51e0_26154101($_smarty_tpl, $_blockParentStack) {
+function block_2224157249cab2477f7_44953693($_smarty_tpl, $_blockParentStack) {
 ?>
 
 	<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/course/sidebar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('active'=>'list'), 0, false);
@@ -103,7 +103,7 @@ function block_470057248df9ee51e0_26154101($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'sidebar'} */
 /* {block 'content'}  file:admin\course\list.tpl */
-function block_240557248df9eecee7_55869832($_smarty_tpl, $_blockParentStack) {
+function block_1536657249cab2571f4_58612875($_smarty_tpl, $_blockParentStack) {
 ?>
 
 <div class="col-md-10" style="min-height:515px;">
@@ -138,7 +138,11 @@ foreach ($_from as $_smarty_tpl->tpl_vars['key']->value => $_smarty_tpl->tpl_var
 $__foreach_course_0_saved_local_item = $_smarty_tpl->tpl_vars['course'];
 ?>
 				<tr>
-					<td><?php echo $_smarty_tpl->tpl_vars['key']->value+1;?>
+					<?php if (isset($_smarty_tpl->tpl_vars['no'])) {$_smarty_tpl->tpl_vars['no'] = clone $_smarty_tpl->tpl_vars['no'];
+$_smarty_tpl->tpl_vars['no']->value = 0; $_smarty_tpl->tpl_vars['no']->nocache = null;
+} else $_smarty_tpl->tpl_vars['no'] = new Smarty_Variable(0, null);
+$_smarty_tpl->ext->_updateScope->updateScope($_smarty_tpl, 'no', 0);?>
+					<td><?php echo $_smarty_tpl->tpl_vars['no']->value+1;?>
 </td>
 					<td><?php echo $_smarty_tpl->tpl_vars['course']->value->name;?>
 </td>

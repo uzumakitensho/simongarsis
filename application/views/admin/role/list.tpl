@@ -23,6 +23,7 @@
 				<tr>
 					<th>#</th>
 					<th>Name</th>
+					<th>Status</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -30,6 +31,7 @@
 				<tr>
 					<td>{$key+1}</td>
 					<td>{$role->description}</td>
+					<td>{if $role->status == 1}{'Active'}{else}{'Non-Active'}{/if}</td>
 				</tr>
 			{/foreach}
 			</tbody>

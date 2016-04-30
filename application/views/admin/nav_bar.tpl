@@ -28,7 +28,7 @@
 					<ul class="dropdown-menu">
 						<li><a href="#">Faults</a></li>
 						<li><a href="{base_url url='admin/course'}">Courses</a></li>
-						<li><a href="#">Classes</a></li>
+						<li><a href="{base_url url='admin/class'}">Classes</a></li>
 						<li><a href="{base_url url='admin/role'}">User Roles</a></li>
 					</ul>
 				</li>

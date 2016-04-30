@@ -120,3 +120,12 @@ $route['admin/course/(:num)'] = 'admin/CourseController/detail/$1';
 $route['admin/course/create'] = 'admin/CourseController/create';
 $route['admin/course/edit/(:num)'] = 'admin/CourseController/edit/$1';
 $route['admin/course/delete/(:num)'] = 'admin/CourseController/delete/$1';
+
+/*
+| Course routes			|
+*/
+$route['admin/class'] = 'admin/ClassController';
+$route['admin/class/(:num)'] = 'admin/ClassController/detail/$1';
+$route['admin/class/create'] = 'admin/ClassController/create';
+$route['admin/class/edit/(:num)'] = 'admin/ClassController/edit/$1';
+$route['admin/class/delete/(:num)'] = 'admin/ClassController/delete/$1';

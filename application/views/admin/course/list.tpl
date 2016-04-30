@@ -30,7 +30,8 @@
 			<tbody>
 			{foreach $courses as $key => $course}
 				<tr>
-					<td>{$key+1}</td>
+					{$no = 0}
+					<td>{$no+1}</td>
 					<td>{$course->name}</td>
 					<td>{if $course->status == 1}{'Active'}{else}{'Non-Active'}{/if}</td>
 					<td>

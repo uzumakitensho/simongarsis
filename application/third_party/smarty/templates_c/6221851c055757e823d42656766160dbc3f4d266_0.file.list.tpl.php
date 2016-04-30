@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-30 10:30:11
+/* Smarty version 3.1.28, created on 2016-04-30 18:09:22
   from "C:\xampp\htdocs\monitoring\application\views\admin\role\list.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_57246d13d90863_27810204',
+  'unifunc' => 'content_5724d8b2e82377_46486415',
   'file_dependency' => 
   array (
     '6221851c055757e823d42656766160dbc3f4d266' => 
     array (
       0 => 'C:\\xampp\\htdocs\\monitoring\\application\\views\\admin\\role\\list.tpl',
-      1 => 1462005009,
+      1 => 1462032558,
       2 => 'file',
     ),
   ),
@@ -24,14 +24,14 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:admin/top_notif.tpl' => 1,
   ),
 ),false)) {
-function content_57246d13d90863_27810204 ($_smarty_tpl) {
+function content_5724d8b2e82377_46486415 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'navbar', array (
-  0 => 'block_764157246d13d5dbd2_50775512',
+  0 => 'block_233935724d8b2cd8696_56751394',
   1 => false,
   3 => 0,
   2 => 0,
@@ -41,7 +41,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'navbar', array (
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'breadcrumb', array (
-  0 => 'block_92657246d13d658d5_04540430',
+  0 => 'block_98625724d8b2ce4219_76573248',
   1 => false,
   3 => 0,
   2 => 0,
@@ -51,7 +51,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'breadcrumb', arr
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'sidebar', array (
-  0 => 'block_2419157246d13d69752_18371669',
+  0 => 'block_274635724d8b2cebf13_12497148',
   1 => false,
   3 => 0,
   2 => 0,
@@ -61,7 +61,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'sidebar', array 
 				
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'content', array (
-  0 => 'block_775657246d13d71454_62931120',
+  0 => 'block_326285724d8b2cf7a97_95927980',
   1 => false,
   3 => 0,
   2 => 0,
@@ -72,7 +72,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'content', array 
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/master_layout.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'navbar'}  file:admin\role\list.tpl */
-function block_764157246d13d5dbd2_50775512($_smarty_tpl, $_blockParentStack) {
+function block_233935724d8b2cd8696_56751394($_smarty_tpl, $_blockParentStack) {
 ?>
 
 	<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/nav_bar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('active'=>'roles'), 0, false);
@@ -82,7 +82,7 @@ function block_764157246d13d5dbd2_50775512($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'navbar'} */
 /* {block 'breadcrumb'}  file:admin\role\list.tpl */
-function block_92657246d13d658d5_04540430($_smarty_tpl, $_blockParentStack) {
+function block_98625724d8b2ce4219_76573248($_smarty_tpl, $_blockParentStack) {
 ?>
 
 	<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/role/breadcum.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('active'=>'home'), 0, false);
@@ -92,7 +92,7 @@ function block_92657246d13d658d5_04540430($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'breadcrumb'} */
 /* {block 'sidebar'}  file:admin\role\list.tpl */
-function block_2419157246d13d69752_18371669($_smarty_tpl, $_blockParentStack) {
+function block_274635724d8b2cebf13_12497148($_smarty_tpl, $_blockParentStack) {
 ?>
 
 	<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/role/sidebar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('active'=>'list'), 0, false);
@@ -102,7 +102,7 @@ function block_2419157246d13d69752_18371669($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'sidebar'} */
 /* {block 'content'}  file:admin\role\list.tpl */
-function block_775657246d13d71454_62931120($_smarty_tpl, $_blockParentStack) {
+function block_326285724d8b2cf7a97_95927980($_smarty_tpl, $_blockParentStack) {
 ?>
 
 <div class="col-md-10" style="min-height:515px;">
@@ -117,6 +117,7 @@ function block_775657246d13d71454_62931120($_smarty_tpl, $_blockParentStack) {
 				<tr>
 					<th>#</th>
 					<th>Name</th>
+					<th>Status</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -139,6 +140,11 @@ $__foreach_role_0_saved_local_item = $_smarty_tpl->tpl_vars['role'];
 </td>
 					<td><?php echo $_smarty_tpl->tpl_vars['role']->value->description;?>
 </td>
+					<td><?php if ($_smarty_tpl->tpl_vars['role']->value->status == 1) {
+echo 'Active';
+} else {
+echo 'Non-Active';
+}?></td>
 				</tr>
 			<?php
 $_smarty_tpl->tpl_vars['role'] = $__foreach_role_0_saved_local_item;

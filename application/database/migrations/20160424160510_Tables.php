@@ -54,10 +54,6 @@ class Migration_Tables extends CI_Migration {
                 'type' => 'VARCHAR',
                 'constraint' => 15
             ),
-            'teacher_id' => array(
-                'type' => 'INT',
-                'constraint' => 5
-            ),
             'note' => array(
                 'type' => 'TEXT'
             ),
@@ -75,7 +71,6 @@ class Migration_Tables extends CI_Migration {
             )
         ));
         $this->dbforge->add_key('id', TRUE);
-        $this->dbforge->add_key('teacher_id');
         $this->dbforge->create_table('classes', TRUE);
 
         //Course
@@ -275,6 +270,98 @@ class Migration_Tables extends CI_Migration {
         $this->dbforge->add_key('course_id');
         $this->dbforge->add_key('teacher_id');
         $this->dbforge->create_table('teachers_courses', TRUE);
+
+        //Academic Years
+        $this->dbforge->add_field(array(
+            'id' => array(
+                'type' => 'INT',
+                'constraint' => 11,
+                'auto_increment' => TRUE
+            ),
+            'year' => array(
+                'type' => 'YEAR',
+                'default' => '0000'
+            ),
+            'status' => array(
+                'type' => 'BOOLEAN',
+                'default' => true
+            ),
+            'created_at' => array(
+                'type' => 'TIMESTAMP',
+                'default' => '0000-00-00 00:00:00'
+            ),
+            'updated_at' => array(
+                'type' => 'TIMESTAMP',
+                'default' => '0000-00-00 00:00:00'
+            )
+        ));
+        $this->dbforge->add_key('id', TRUE);
+        $this->dbforge->create_table('academic_years', TRUE);
+
+        //Semesters
+        $this->dbforge->add_field(array(
+            'id' => array(
+                'type' => 'INT',
+                'constraint' => 11,
+                'auto_increment' => TRUE
+            ),
+            'academic_year_id' => array(
+                'type' => 'INT',
+                'constraint' => 5
+            ),
+            'code' => array(
+                'type' => 'BOOLEAN',
+                'default' => true
+            ),
+            'status' => array(
+                'type' => 'BOOLEAN',
+                'default' => true
+            ),
+            'created_at' => array(
+                'type' => 'TIMESTAMP',
+                'default' => '0000-00-00 00:00:00'
+            ),
+            'updated_at' => array(
+                'type' => 'TIMESTAMP',
+                'default' => '0000-00-00 00:00:00'
+            )
+        ));
+        $this->dbforge->add_key('id', TRUE);
+        $this->dbforge->create_table('semesters', TRUE);
+
+        //Teacher's Classes
+        $this->dbforge->add_field(array(
+            'id' => array(
+                'type' => 'INT',
+                'constraint' => 11,
+                'auto_increment' => TRUE
+            ),
+            'class_id' => array(
+                'type' => 'INT',
+                'constraint' => 5
+            ),
+            'teacher_id' => array(
+                'type' => 'INT',
+                'constraint' => 5
+            ),
+            'academic_year_id' => array(
+                'type' => 'INT',
+                'constraint' => 5
+            ),
+            'created_at' => array(
+                'type' => 'TIMESTAMP',
+                'default' => '0000-00-00 00:00:00'
+            ),
+            'updated_at' => array(
+                'type' => 'TIMESTAMP',
+                'default' => '0000-00-00 00:00:00'
+            )
+        ));
+        $this->dbforge->add_key('id', TRUE);
+        $this->dbforge->add_key('class_id');
+        $this->dbforge->add_key('teacher_id');
+        $this->dbforge->add_key('academic_year_id');
+        $this->dbforge->create_table('teachers_classes', TRUE);
 
         //Student
         $this->dbforge->add_field(array(
