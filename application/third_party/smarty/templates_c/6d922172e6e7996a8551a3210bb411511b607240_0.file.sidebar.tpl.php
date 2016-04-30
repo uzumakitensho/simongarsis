@@ -1,0 +1,45 @@
+<?php
+/* Smarty version 3.1.28, created on 2016-04-30 09:50:43
+  from "C:\xampp\htdocs\monitoring\application\views\admin\role\sidebar.tpl" */
+
+if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
+  'has_nocache_code' => false,
+  'version' => '3.1.28',
+  'unifunc' => 'content_572463d3e499d6_20433681',
+  'file_dependency' => 
+  array (
+    '6d922172e6e7996a8551a3210bb411511b607240' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\monitoring\\application\\views\\admin\\role\\sidebar.tpl',
+      1 => 1462002639,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_572463d3e499d6_20433681 ($_smarty_tpl) {
+if (!is_callable('smarty_function_base_url')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.base_url.php';
+?>
+<div class="col-md-2" style="padding-left: 0px; padding-right: 0px;">
+	<div class="list-group">
+		<?php if ((isset($_smarty_tpl->tpl_vars['active']->value) && ($_smarty_tpl->tpl_vars['active']->value == 'list' || $_smarty_tpl->tpl_vars['active']->value == 'create'))) {?>
+		<a href="<?php echo smarty_function_base_url(array('url'=>'admin/role'),$_smarty_tpl);?>
+" class="list-group-item <?php if ((isset($_smarty_tpl->tpl_vars['active']->value) && $_smarty_tpl->tpl_vars['active']->value == 'list')) {?> <?php echo 'active';?>
+ <?php }?>" style="border-radius: 0px;">
+			List of Role
+		</a>
+		<?php } elseif ((isset($_smarty_tpl->tpl_vars['active']->value) && ($_smarty_tpl->tpl_vars['active']->value == 'list' || $_smarty_tpl->tpl_vars['active']->value == 'edit'))) {?>
+		<a href="<?php echo smarty_function_base_url(array('url'=>'admin/role'),$_smarty_tpl);?>
+" class="list-group-item <?php if ((isset($_smarty_tpl->tpl_vars['active']->value) && $_smarty_tpl->tpl_vars['active']->value == 'list')) {?> <?php echo 'active';?>
+ <?php }?>" style="border-radius: 0px;">
+			List of Role
+		</a>
+		<a href="<?php echo smarty_function_base_url(array('url'=>'admin/role/edit','src'=>$_smarty_tpl->tpl_vars['role']->value->id),$_smarty_tpl);?>
+" class="list-group-item <?php if ((isset($_smarty_tpl->tpl_vars['active']->value) && $_smarty_tpl->tpl_vars['active']->value == 'edit')) {?> <?php echo 'active';?>
+ <?php }?>" style="border-radius: 0px;">Edit Role</a>
+		<?php }?>
+	</div>
+</div><?php }
+}

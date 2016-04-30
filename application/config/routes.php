@@ -103,3 +103,11 @@ $route['admin/parent/(:num)'] = 'admin/ParentController/detail/$1';
 $route['admin/parent/create'] = 'admin/ParentController/create';
 $route['admin/parent/edit/(:num)'] = 'admin/ParentController/edit/$1';
 $route['admin/parent/delete/(:num)'] = 'admin/ParentController/delete/$1';
+
+/*
+| Role routes			|
+*/
+$route['admin/role'] = 'admin/RoleController';
+$route['admin/role/(:num)'] = 'admin/RoleController/detail/$1';
+$route['admin/role/create'] = 'admin/RoleController/create';
+$route['admin/role/edit/(:num)'] = 'admin/RoleController/edit/$1';

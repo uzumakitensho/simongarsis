@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-29 02:54:04
+/* Smarty version 3.1.28, created on 2016-04-30 09:21:41
   from "C:\xampp\htdocs\monitoring\application\views\admin\user\list.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_5722b0acce20e4_84374688',
+  'unifunc' => 'content_57245d054133a8_20590908',
   'file_dependency' => 
   array (
     '99d6ff5f89bf20d702642e8c3a0203974030612f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\monitoring\\application\\views\\admin\\user\\list.tpl',
-      1 => 1461860004,
+      1 => 1461938951,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:admin/top_notif.tpl' => 1,
   ),
 ),false)) {
-function content_5722b0acce20e4_84374688 ($_smarty_tpl) {
+function content_57245d054133a8_20590908 ($_smarty_tpl) {
 if (!is_callable('smarty_function_base_url')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.base_url.php';
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
@@ -32,7 +32,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'navbar', array (
-  0 => 'block_145645722b0acc80641_00856835',
+  0 => 'block_192857245d053a5d81_01982534',
   1 => false,
   3 => 0,
   2 => 0,
@@ -42,7 +42,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'navbar', array (
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'breadcrumb', array (
-  0 => 'block_249095722b0acc8c1c7_49909721',
+  0 => 'block_2179357245d053ada83_05591486',
   1 => false,
   3 => 0,
   2 => 0,
@@ -52,7 +52,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'breadcrumb', arr
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'sidebar', array (
-  0 => 'block_51225722b0acc97d42_32290346',
+  0 => 'block_3207057245d053b1908_32486600',
   1 => false,
   3 => 0,
   2 => 0,
@@ -62,7 +62,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'sidebar', array 
 				
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'content', array (
-  0 => 'block_207555722b0acc9fa56_13934186',
+  0 => 'block_2330357245d053b9615_80837486',
   1 => false,
   3 => 0,
   2 => 0,
@@ -73,7 +73,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'content', array 
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/master_layout.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'navbar'}  file:admin\user\list.tpl */
-function block_145645722b0acc80641_00856835($_smarty_tpl, $_blockParentStack) {
+function block_192857245d053a5d81_01982534($_smarty_tpl, $_blockParentStack) {
 ?>
 
 	<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/nav_bar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('active'=>'users'), 0, false);
@@ -83,7 +83,7 @@ function block_145645722b0acc80641_00856835($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'navbar'} */
 /* {block 'breadcrumb'}  file:admin\user\list.tpl */
-function block_249095722b0acc8c1c7_49909721($_smarty_tpl, $_blockParentStack) {
+function block_2179357245d053ada83_05591486($_smarty_tpl, $_blockParentStack) {
 ?>
 
 	<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/user/breadcum.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('active'=>'home'), 0, false);
@@ -93,7 +93,7 @@ function block_249095722b0acc8c1c7_49909721($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'breadcrumb'} */
 /* {block 'sidebar'}  file:admin\user\list.tpl */
-function block_51225722b0acc97d42_32290346($_smarty_tpl, $_blockParentStack) {
+function block_3207057245d053b1908_32486600($_smarty_tpl, $_blockParentStack) {
 ?>
 
 	<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:admin/user/sidebar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('active'=>'list'), 0, false);
@@ -103,7 +103,7 @@ function block_51225722b0acc97d42_32290346($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'sidebar'} */
 /* {block 'content'}  file:admin\user\list.tpl */
-function block_207555722b0acc9fa56_13934186($_smarty_tpl, $_blockParentStack) {
+function block_2330357245d053b9615_80837486($_smarty_tpl, $_blockParentStack) {
 ?>
 
 <div class="col-md-10" style="min-height:515px;">
@@ -156,7 +156,7 @@ echo 'Non-Active';
 						<a href="<?php echo smarty_function_base_url(array('url'=>'admin/user/edit','src'=>$_smarty_tpl->tpl_vars['user']->value->id),$_smarty_tpl);?>
 " class="btn btn-primary btn-xs">Edit</a>
 						<a href="<?php echo smarty_function_base_url(array('url'=>'admin/user/delete','src'=>$_smarty_tpl->tpl_vars['user']->value->id),$_smarty_tpl);?>
-" class="btn btn-danger btn-xs">Hapus</a>
+" class="btn btn-danger btn-xs" onclick="return confirm('Are you sure?')">Hapus</a>
 					</td>
 				</tr>
 			<?php

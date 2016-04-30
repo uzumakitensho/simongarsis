@@ -29,7 +29,7 @@
 						<li><a href="#">Faults</a></li>
 						<li><a href="#">Courses</a></li>
 						<li><a href="#">Classes</a></li>
-						<li><a href="#">User Roles</a></li>
+						<li><a href="{base_url url='admin/role'}">User Roles</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
