@@ -15,7 +15,7 @@ class Course extends CI_Model {
 	public function insert_entry()
 	{
 		$data = array(
-			'name' => $this->input->post('name'),
+			'name' => strtoupper($this->input->post('name')),
 	    'status' => $this->input->post('status'),
 	    'created_at' => date('Y-m-d H:i:s'),
 	    'updated_at' => date('Y-m-d H:i:s')
@@ -28,9 +28,11 @@ class Course extends CI_Model {
 	public function update_entry()
 	{
 		$id = $this->input->post('id');
+		if($this->check(strtoupper($this->input->post('name'))))
+			return false;
 
 		$data = array(
-			'name' => $this->input->post('name'),
+			'name' => strtoupper($this->input->post('name')),
 	    'status' => $this->input->post('status'),
 	    'created_at' => date('Y-m-d H:i:s'),
 	    'updated_at' => date('Y-m-d H:i:s')
@@ -74,6 +76,20 @@ class Course extends CI_Model {
 		//var_dump($this->id);die;
 		$sql->free_result();
 		return $data;
+	}
+
+	public function check($name)
+	{
+		$data = array();
+		$this->db->select('*');
+		$this->db->from('courses');
+		$this->db->where('courses.name', $name);
+		$sql = $this->db->get();
+		if($sql->num_rows() > 0){
+			return true;
+		}else{
+			return false;
+		}
 	}
 	
 }

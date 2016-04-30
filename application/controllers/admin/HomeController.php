@@ -18,7 +18,7 @@ class HomeController extends CI_Controller {
 		}else{
 			
 			//$this->smartyci->useCached( 'admin\home\list.tpl' );
-			$this->smartyci->assign('now', Carbon::now()->toRfc850String());
+			$this->smartyci->assign('now', Carbon::now('Asia/Jakarta')->toRfc850String());
 			$this->smartyci->display( 'admin\home\list.tpl' );
 		}
 	}

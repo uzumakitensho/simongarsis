@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-29 14:56:19
+/* Smarty version 3.1.28, created on 2016-04-30 12:14:58
   from "C:\xampp\htdocs\monitoring\application\views\admin\master_layout.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_572359f3539a22_93399259',
+  'unifunc' => 'content_572485a2706556_83569296',
   'file_dependency' => 
   array (
     '2a7883de33024fed64077ae6e17132fdf6372063' => 
     array (
       0 => 'C:\\xampp\\htdocs\\monitoring\\application\\views\\admin\\master_layout.tpl',
-      1 => 1461934315,
+      1 => 1462011295,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_572359f3539a22_93399259 ($_smarty_tpl) {
+function content_572485a2706556_83569296 ($_smarty_tpl) {
 if (!is_callable('smarty_function_base_url')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.base_url.php';
 if (!is_callable('smarty_function_get_session')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.get_session.php';
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
@@ -40,7 +40,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
   <body>
 		<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'navbar', array (
-  0 => 'block_29931572359f349d605_50815000',
+  0 => 'block_17409572485a26d7746_91658281',
   1 => false,
   3 => 0,
   2 => 0,
@@ -50,7 +50,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'navbar', array (
 		
 		<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'breadcrumb', array (
-  0 => 'block_4680572359f34a1487_44970843',
+  0 => 'block_29350572485a26db5c9_01087033',
   1 => false,
   3 => 0,
   2 => 0,
@@ -62,7 +62,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'breadcrumb', arr
 			<div class="row">
 				<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'sidebar', array (
-  0 => 'block_26849572359f34a5300_23162067',
+  0 => 'block_5351572485a26e32c0_45911986',
   1 => false,
   3 => 0,
   2 => 0,
@@ -72,7 +72,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'sidebar', array 
 				
 				<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'content', array (
-  0 => 'block_26118572359f34a9180_72397306',
+  0 => 'block_30868572485a26e7146_04193545',
   1 => false,
   3 => 0,
   2 => 0,
@@ -84,7 +84,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'content', array 
 		
 		<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'footer', array (
-  0 => 'block_29895572359f34ad003_52294479',
+  0 => 'block_7997572485a26eafc1_28714194',
   1 => false,
   3 => 0,
   2 => 0,
@@ -94,7 +94,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'footer', array (
 		
 		<?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'modal', array (
-  0 => 'block_2804572359f35261a5_67875029',
+  0 => 'block_4914572485a26f2cc5_66494946',
   1 => false,
   3 => 0,
   2 => 0,
@@ -120,7 +120,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'modal', array (
 
     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'js', array (
-  0 => 'block_12829572359f3531d29_28624500',
+  0 => 'block_6275572485a26fe859_20202638',
   1 => false,
   3 => 0,
   2 => 0,
@@ -130,44 +130,43 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, 'js', array (
   </body>
 </html><?php }
 /* {block 'navbar'}  file:admin/master_layout.tpl */
-function block_29931572359f349d605_50815000($_smarty_tpl, $_blockParentStack) {
+function block_17409572485a26d7746_91658281($_smarty_tpl, $_blockParentStack) {
 ?>
 
 		<?php
 }
 /* {/block 'navbar'} */
 /* {block 'breadcrumb'}  file:admin/master_layout.tpl */
-function block_4680572359f34a1487_44970843($_smarty_tpl, $_blockParentStack) {
+function block_29350572485a26db5c9_01087033($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'breadcrumb'} */
 /* {block 'sidebar'}  file:admin/master_layout.tpl */
-function block_26849572359f34a5300_23162067($_smarty_tpl, $_blockParentStack) {
+function block_5351572485a26e32c0_45911986($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'sidebar'} */
 /* {block 'content'}  file:admin/master_layout.tpl */
-function block_26118572359f34a9180_72397306($_smarty_tpl, $_blockParentStack) {
+function block_30868572485a26e7146_04193545($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'content'} */
 /* {block 'footer'}  file:admin/master_layout.tpl */
-function block_29895572359f34ad003_52294479($_smarty_tpl, $_blockParentStack) {
+function block_7997572485a26eafc1_28714194($_smarty_tpl, $_blockParentStack) {
 ?>
 
 		<footer class="navbar navbar-default" style="margin-top:20px; margin-bottom:0px; border-radius: 0px;">
 			<div class="container-fluid">
-				<p class="navbar-text">Signed in as <?php echo smarty_function_get_session(array('name'=>'full_name'),$_smarty_tpl);?>
-. Powered by Smarty <?php echo '3.1.28';?>
-.</p>
+				<p class="navbar-text">Signed in as <b><?php echo smarty_function_get_session(array('name'=>'full_name'),$_smarty_tpl);?>
+</b>. Developed by Hafid Afridian &copy; 2016.</p>
 			</div>
 		</footer>
 		<?php
 }
 /* {/block 'footer'} */
 /* {block 'modal'}  file:admin/master_layout.tpl */
-function block_2804572359f35261a5_67875029($_smarty_tpl, $_blockParentStack) {
+function block_4914572485a26f2cc5_66494946($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'modal'} */
 /* {block 'js'}  file:admin/master_layout.tpl */
-function block_12829572359f3531d29_28624500($_smarty_tpl, $_blockParentStack) {
+function block_6275572485a26fe859_20202638($_smarty_tpl, $_blockParentStack) {
 }
 /* {/block 'js'} */
 }

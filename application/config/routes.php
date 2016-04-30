@@ -111,3 +111,12 @@ $route['admin/role'] = 'admin/RoleController';
 $route['admin/role/(:num)'] = 'admin/RoleController/detail/$1';
 $route['admin/role/create'] = 'admin/RoleController/create';
 $route['admin/role/edit/(:num)'] = 'admin/RoleController/edit/$1';
+
+/*
+| Course routes			|
+*/
+$route['admin/course'] = 'admin/CourseController';
+$route['admin/course/(:num)'] = 'admin/CourseController/detail/$1';
+$route['admin/course/create'] = 'admin/CourseController/create';
+$route['admin/course/edit/(:num)'] = 'admin/CourseController/edit/$1';
+$route['admin/course/delete/(:num)'] = 'admin/CourseController/delete/$1';

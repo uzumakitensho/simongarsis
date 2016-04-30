@@ -27,7 +27,7 @@
 		{block name=footer}
 		<footer class="navbar navbar-default" style="margin-top:20px; margin-bottom:0px; border-radius: 0px;">
 			<div class="container-fluid">
-				<p class="navbar-text">Signed in as {get_session name='full_name'}. Powered by Smarty {$smarty.version}.</p>
+				<p class="navbar-text">Signed in as <b>{get_session name='full_name'}</b>. Developed by Hafid Afridian &copy; 2016.</p>
 			</div>
 		</footer>
 		{/block}

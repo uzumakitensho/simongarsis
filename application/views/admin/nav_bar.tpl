@@ -27,7 +27,7 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Master<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#">Faults</a></li>
-						<li><a href="#">Courses</a></li>
+						<li><a href="{base_url url='admin/course'}">Courses</a></li>
 						<li><a href="#">Classes</a></li>
 						<li><a href="{base_url url='admin/role'}">User Roles</a></li>
 					</ul>
