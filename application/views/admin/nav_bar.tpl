@@ -30,6 +30,7 @@
 						<li><a href="{base_url url='admin/course'}">Courses</a></li>
 						<li><a href="{base_url url='admin/class'}">Classes</a></li>
 						<li><a href="{base_url url='admin/role'}">User Roles</a></li>
+						<li><a href="#">Academic Year</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">

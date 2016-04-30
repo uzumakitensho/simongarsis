@@ -310,8 +310,8 @@ class Migration_Tables extends CI_Migration {
                 'constraint' => 5
             ),
             'code' => array(
-                'type' => 'BOOLEAN',
-                'default' => true
+                'type' => 'VARCHAR',
+                'constraint' => 5
             ),
             'status' => array(
                 'type' => 'BOOLEAN',

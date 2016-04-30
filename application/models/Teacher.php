@@ -50,7 +50,6 @@ class Teacher extends CI_Model {
 			'email' => $this->input->post('email'),
 	    'role_id' => $this->input->post('role'),
 	    'status' => $this->input->post('status'),
-	    'created_at' => date('Y-m-d H:i:s'),
 	    'updated_at' => date('Y-m-d H:i:s')
     );
 		

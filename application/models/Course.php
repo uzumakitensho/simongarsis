@@ -34,7 +34,6 @@ class Course extends CI_Model {
 		$data = array(
 			'name' => strtoupper($this->input->post('name')),
 	    'status' => $this->input->post('status'),
-	    'created_at' => date('Y-m-d H:i:s'),
 	    'updated_at' => date('Y-m-d H:i:s')
     );
 		

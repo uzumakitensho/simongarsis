@@ -39,7 +39,7 @@ class User extends CI_Model {
 	    'status' => $this->input->post('status'),
 	    'updated_at' => date('Y-m-d H:i:s')
     );
-		
+		//var_dump($data);die;
 		return $this->db->update('users', $data, array('id' => $id));
 	}
 	

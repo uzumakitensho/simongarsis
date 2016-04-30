@@ -122,10 +122,19 @@ $route['admin/course/edit/(:num)'] = 'admin/CourseController/edit/$1';
 $route['admin/course/delete/(:num)'] = 'admin/CourseController/delete/$1';
 
 /*
-| Course routes			|
+| Class routes			|
 */
 $route['admin/class'] = 'admin/ClassController';
 $route['admin/class/(:num)'] = 'admin/ClassController/detail/$1';
 $route['admin/class/create'] = 'admin/ClassController/create';
 $route['admin/class/edit/(:num)'] = 'admin/ClassController/edit/$1';
 $route['admin/class/delete/(:num)'] = 'admin/ClassController/delete/$1';
+
+/*
+| Academic Year routes			|
+*/
+$route['admin/year'] = 'admin/AcademicYearController';
+$route['admin/year/(:num)'] = 'admin/AcademicYearController/detail/$1';
+$route['admin/year/create'] = 'admin/AcademicYearController/create';
+$route['admin/year/edit/(:num)'] = 'admin/AcademicYearController/edit/$1';
+$route['admin/year/delete/(:num)'] = 'admin/AcademicYearController/delete/$1';

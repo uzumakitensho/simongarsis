@@ -34,7 +34,6 @@ class Role extends CI_Model {
 			'name' => $this->input->post('name'),
 			'description' => $this->input->post('description'),
 	    'status' => $this->input->post('status'),
-	    'created_at' => date('Y-m-d H:i:s'),
 	    'updated_at' => date('Y-m-d H:i:s')
     );
 		

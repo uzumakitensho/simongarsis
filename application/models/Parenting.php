@@ -46,7 +46,6 @@ class Parenting extends CI_Model {
 			'address' => $this->input->post('address'),
 			'email' => $this->input->post('email'),
 	    'status' => $this->input->post('status'),
-	    'created_at' => date('Y-m-d H:i:s'),
 	    'updated_at' => date('Y-m-d H:i:s')
     );
 		
