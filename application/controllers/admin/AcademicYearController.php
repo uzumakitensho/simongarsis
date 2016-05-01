@@ -20,6 +20,18 @@ class AcademicYearController extends CI_Controller {
 		}
 	}
 
+	public function semester()
+	{
+		if($this->session->logged_as != 'administrator'){
+			redirect(base_url('admin/login'));
+		}else{
+			$semesters = $this->Semester->get_entries();
+			
+			$this->smartyci->assign('semesters', $semesters);
+			$this->smartyci->display( 'admin\year\slist.tpl' );
+		}
+	}
+
 	public function create()
 	{
 		//var_dump($_SESSION);die;
@@ -29,9 +41,9 @@ class AcademicYearController extends CI_Controller {
 			$this->load->library('form_validation');
 			$config = array(
 				array(
-					'field' => 'name',
-					'label' => 'Name',
-					'rules' => 'trim|required|min_length[2]|is_unique[academic_years.name]'
+					'field' => 'year',
+					'label' => 'Year',
+					'rules' => 'trim|required|max_length[4]|greater_than[1970]|less_than[2030]|is_unique[academic_years.year]'
 				)
 			);
 
@@ -60,9 +72,9 @@ class AcademicYearController extends CI_Controller {
 			$this->load->library('form_validation');
 			$config = array(
 				array(
-					'field' => 'name',
-					'label' => 'Name',
-					'rules' => 'trim|required|min_length[2]'
+					'field' => 'year',
+					'label' => 'Year',
+					'rules' => 'trim|required|max_length[4]|greater_than[1970]|less_than[2030]'
 				)
 			);
 

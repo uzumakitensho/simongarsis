@@ -138,3 +138,9 @@ $route['admin/year/(:num)'] = 'admin/AcademicYearController/detail/$1';
 $route['admin/year/create'] = 'admin/AcademicYearController/create';
 $route['admin/year/edit/(:num)'] = 'admin/AcademicYearController/edit/$1';
 $route['admin/year/delete/(:num)'] = 'admin/AcademicYearController/delete/$1';
+
+/*
+| Semester Year routes			|
+*/
+$route['admin/semester'] = 'admin/AcademicYearController/semester';
+$route['admin/semester/(:num)'] = 'admin/AcademicYearController/detail_semester/$1';
