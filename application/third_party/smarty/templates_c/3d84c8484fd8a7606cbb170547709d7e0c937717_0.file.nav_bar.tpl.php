@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-05-01 07:24:12
+/* Smarty version 3.1.28, created on 2016-05-02 17:43:28
   from "C:\xampp\htdocs\monitoring\application\views\admin\nav_bar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_572592fc111d67_81397544',
+  'unifunc' => 'content_572775a0669377_46837457',
   'file_dependency' => 
   array (
     '3d84c8484fd8a7606cbb170547709d7e0c937717' => 
     array (
       0 => 'C:\\xampp\\htdocs\\monitoring\\application\\views\\admin\\nav_bar.tpl',
-      1 => 1462080226,
+      1 => 1462203800,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_572592fc111d67_81397544 ($_smarty_tpl) {
+function content_572775a0669377_46837457 ($_smarty_tpl) {
 if (!is_callable('smarty_function_base_url')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.base_url.php';
 if (!is_callable('smarty_function_get_session')) require_once 'C:\\xampp\\htdocs\\monitoring\\application\\third_party\\smarty\\libs\\plugins\\function.get_session.php';
 ?>
@@ -65,6 +65,17 @@ if (!is_callable('smarty_function_get_session')) require_once 'C:\\xampp\\htdocs
 ">User Roles</a></li>
 						<li><a href="<?php echo smarty_function_base_url(array('url'=>'admin/year'),$_smarty_tpl);?>
 ">Academic Year</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Faults Master<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="<?php echo smarty_function_base_url(array('url'=>'admin/fault/category'),$_smarty_tpl);?>
+">Fault Category</a></li>
+						<li><a href="<?php echo smarty_function_base_url(array('url'=>'admin/fault/type'),$_smarty_tpl);?>
+">Fault Type</a></li>
+						<li><a href="<?php echo smarty_function_base_url(array('url'=>'admin/fault'),$_smarty_tpl);?>
+">Fault</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">

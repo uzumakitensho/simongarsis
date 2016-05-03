@@ -140,7 +140,25 @@ $route['admin/year/edit/(:num)'] = 'admin/AcademicYearController/edit/$1';
 $route['admin/year/delete/(:num)'] = 'admin/AcademicYearController/delete/$1';
 
 /*
-| Semester Year routes			|
+| Semester routes			|
 */
 $route['admin/semester'] = 'admin/AcademicYearController/semester';
 $route['admin/semester/(:num)'] = 'admin/AcademicYearController/detail_semester/$1';
+
+/*
+| Fault Category routes			|
+*/
+$route['admin/fault/category'] = 'admin/CategoryController';
+$route['admin/fault/category/(:num)'] = 'admin/CategoryController/detail/$1';
+$route['admin/fault/category/create'] = 'admin/CategoryController/create';
+$route['admin/fault/category/edit/(:num)'] = 'admin/CategoryController/edit/$1';
+$route['admin/fault/category/delete/(:num)'] = 'admin/CategoryController/delete/$1';
+
+/*
+| Fault Type routes			|
+*/
+$route['admin/fault/type'] = 'admin/TypeController';
+$route['admin/fault/type/(:num)'] = 'admin/TypeController/detail/$1';
+$route['admin/fault/type/create'] = 'admin/TypeController/create';
+$route['admin/fault/type/edit/(:num)'] = 'admin/TypeController/edit/$1';
+$route['admin/fault/type/delete/(:num)'] = 'admin/TypeController/delete/$1';

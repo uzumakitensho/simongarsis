@@ -25,6 +25,7 @@
 		</div>
 		
 		{block name=footer}
+		<!-- Developed By Hafid Afridian $copy; 2016 -->
 		<footer class="navbar navbar-default" style="margin-top:20px; margin-bottom:0px; border-radius: 0px;">
 			<div class="container-fluid">
 				<p class="navbar-text">Signed in as <b>{get_session name='full_name'}</b>. Developed by Hafid Afridian &copy; 2016.</p>

@@ -604,7 +604,7 @@ class Migration_Tables extends CI_Migration {
             ),
             'name' => array(
                 'type' => 'VARCHAR',
-                'constraint' => 40
+                'constraint' => 255
             ),
             'short_name' => array(
                 'type' => 'VARCHAR',
@@ -629,6 +629,46 @@ class Migration_Tables extends CI_Migration {
         $this->dbforge->add_key('id', TRUE);
         $this->dbforge->create_table('categories', TRUE);
 
+        //Fault Type
+        $this->dbforge->add_field(array(
+            'id' => array(
+                'type' => 'INT',
+                'constraint' => 11,
+                'auto_increment' => TRUE
+            ),
+            'name' => array(
+                'type' => 'VARCHAR',
+                'constraint' => 255
+            ),
+            'short_name' => array(
+                'type' => 'VARCHAR',
+                'constraint' => 15
+            ),
+            'description' => array(
+                'type' => 'TEXT'
+            ),
+            'category_id' => array(
+                'type' => 'INT',
+                'constraint' => 5
+            ),
+            'status' => array(
+                'type' => 'BOOLEAN',
+                'default' => true
+            ),
+            'created_at' => array(
+                'type' => 'TIMESTAMP',
+                'default' => '0000-00-00 00:00:00'
+            ),
+            'updated_at' => array(
+                'type' => 'TIMESTAMP',
+                'default' => '0000-00-00 00:00:00'
+            )
+        ));
+        $this->dbforge->add_key('id', TRUE);
+        $this->dbforge->add_key('name');
+        $this->dbforge->add_key('category_id');
+        $this->dbforge->create_table('types', TRUE);
+
         //Fault
         $this->dbforge->add_field(array(
             'id' => array(
@@ -638,7 +678,7 @@ class Migration_Tables extends CI_Migration {
             ),
             'name' => array(
                 'type' => 'VARCHAR',
-                'constraint' => 40
+                'constraint' => 255
             ),
             'short_name' => array(
                 'type' => 'VARCHAR',
@@ -655,7 +695,7 @@ class Migration_Tables extends CI_Migration {
                 'type' => 'BOOLEAN',
                 'default' => true
             ),
-            'category_id' => array(
+            'type_id' => array(
                 'type' => 'INT',
                 'constraint' => 5
             ),
@@ -670,7 +710,7 @@ class Migration_Tables extends CI_Migration {
         ));
         $this->dbforge->add_key('id', TRUE);
         $this->dbforge->add_key('name');
-        $this->dbforge->add_key('category_id');
+        $this->dbforge->add_key('type_id');
         $this->dbforge->create_table('faults', TRUE);
 
         //Student's Faults
@@ -718,6 +758,7 @@ class Migration_Tables extends CI_Migration {
         $this->dbforge->drop_table('parents', TRUE);
         $this->dbforge->drop_table('students_parents', TRUE);
         $this->dbforge->drop_table('categories', TRUE);
+        $this->dbforge->drop_table('types', TRUE);
         $this->dbforge->drop_table('faults', TRUE);
         $this->dbforge->drop_table('students_faults', TRUE);
 

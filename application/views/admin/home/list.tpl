@@ -16,7 +16,6 @@
 	{include file="admin/top_notif.tpl"}
 	<h3>Welcome, {get_session name='full_name'}.</h3>
 	<p>Date: {$now}</p>
-	<a href="{base_url url='admin/migrate'}">Migrate</a>
 </div>
 {/block}
 

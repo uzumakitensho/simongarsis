@@ -34,6 +34,14 @@
 					</ul>
 				</li>
 				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Faults Master<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="{base_url url='admin/fault/category'}">Fault Category</a></li>
+						<li><a href="{base_url url='admin/fault/type'}">Fault Type</a></li>
+						<li><a href="{base_url url='admin/fault'}">Fault</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{get_session name='full_name'}<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#">Profil</a></li>
